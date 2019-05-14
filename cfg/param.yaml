@@ -1,0 +1,27 @@
+output_version: "baseline"
+log_dir: "logs"
+
+data_root_dir: "./data/MNIST"
+
+train:
+  dataset: "train"
+  gpus: "1"
+  nworkers: 4
+  pin_mem: True
+  batch_size: 64
+
+  num_epochs: 10
+  resume: False
+  checkpoint: "checkpoint"
+  backup_interval: 10
+
+  learning_rate: 1e-3
+
+  
+test:
+  dataset: "test"
+  nworkers: 4
+  pin_mem: True
+  batch_size: 64
+
+  test_interval: 5
