@@ -28,3 +28,7 @@ class ConvNet(nn.Module):
         x = x.view(x.size(0), -1)
         x = self.classifier(x)
         return x
+
+
+def lr_find(mode, train_loader):
+    pass

@@ -1,27 +1,28 @@
 output_version: "baseline"
 log_dir: "logs"
 
-data_root_dir: "./data/MNIST"
+data_root_dir: "~/.torch/datasets/"
+seed: 1
 
 train:
   dataset: "train"
   gpus: "1"
-  nworkers: 4
+  nworkers: 2
   pin_mem: True
-  batch_size: 64
+  batch_size: 256
 
-  num_epochs: 10
+  num_epochs: 50
   resume: False
   checkpoint: "checkpoint"
   backup_interval: 10
 
-  learning_rate: 1e-3
+  learning_rate: 1e-2
 
   
 test:
   dataset: "test"
-  nworkers: 4
+  nworkers: 2
   pin_mem: True
-  batch_size: 64
+  batch_size: 512
 
-  test_interval: 5
+  test_interval: 2
