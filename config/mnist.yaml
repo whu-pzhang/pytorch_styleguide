@@ -11,9 +11,9 @@ train:
   pin_mem: True
   batch_size: 256
 
-  num_epochs: 4
+  num_epochs: 5
 
-  resume: True
+  resume: False
   checkpoint: "checkpoint"
   backup_interval: 1
 

@@ -8,6 +8,7 @@ import torchvision.transforms as T
 import numpy as np
 import time
 from pathlib import Path
+import shutil
 
 from tqdm import tqdm
 from tensorboardX import SummaryWriter
@@ -84,6 +85,7 @@ if __name__ == "__main__":
 
     # load checkpoint if needed
     start_epoch = 0
+    start_niter = 0
     if resume:
         ckpt = utils.load_checkpoint(ckpt_path)  # custom method for loading last checkpoint
         net.load_state_dict(ckpt['model_state'])
@@ -149,6 +151,5 @@ if __name__ == "__main__":
                      "model_state": net.state_dict(),
                      "optim_state": optimizer.state_dict()
                      }
-            # filename = Path(ckpt_path) / f"mnist_{version}_{epoch+1}.pth"
-            # torch.save(state, filename)
-            utils.save_checkpoint(state, False, ckpt_path)
+            weight_name = f"mnist_{version}_{epoch+1}.pth.tar"
+            utils.save_checkpoint(state, False, ckpt_path, weight_name)

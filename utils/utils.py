@@ -23,12 +23,13 @@ def select_device(force_cpu=False):
     return device
 
 
-def save_checkpoint(state, is_best, checkpoint_path):
-    filepath = Path(checkpoint_path) / "last.pth.tar"
+def save_checkpoint(state, is_best, checkpoint_path, weight_name):
+    filepath = Path(checkpoint_path) / weight_name
     if not Path(checkpoint_path).exists():
         print(f"Checkpoint directory does not exist! Making directory {checkpoint_path}")
         Path(checkpoint_path).mkdir()
     torch.save(state, filepath)
+    shutil.copyfile(filepath, Path(checkpoint_path) / "last.pth.tar")
     if is_best:
         shutil.copyfile(filepath, Path(checkpoint_path) / "best.pth.tar")
 
