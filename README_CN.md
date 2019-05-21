@@ -52,3 +52,16 @@
 | 变量       | 带下划线的小写字母 | **background_color**='Blue'                            |
 
 **尽可能使每个变量或者函数名是一些有意义的单词。**
+
+
+## 代码示例
+
+- MNIST数字识别
+
+```bash
+$ python train/mnist_train.py --cfg config/mnist.yaml
+```
+
+## TODO
+
+- U-Net语义分割

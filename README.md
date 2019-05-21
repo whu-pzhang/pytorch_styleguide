@@ -61,3 +61,14 @@ Here is a summary of the most commonly used rules:
 
 **Try your best to using meaningful words.**
 
+## Demo
+
+### MNIST digits recognition
+
+```bash
+$ python train/mnist_train.py --cfg config/mnist.yaml
+```
+
+## TODO
+
+- U-Net
