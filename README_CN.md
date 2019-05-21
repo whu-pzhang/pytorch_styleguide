@@ -18,7 +18,7 @@
 
 ```bash
 ├── README.md
-├── cfg
+├── config
 ├── losses
 ├── models
 ├── requirements.txt

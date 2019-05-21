@@ -25,7 +25,7 @@ The main routine, such as the train and test scripts should only import from the
 
 ```bash
 ├── README.md
-├── cfg
+├── config
 ├── losses
 ├── models
 ├── requirements.txt
@@ -36,7 +36,7 @@ The main routine, such as the train and test scripts should only import from the
 
 - `README.md`: descriptions of your project
 - `requirements.txt`: the required packages of your project
-- `cfg`: configuration file folder. such as your training parameters.
+- `config`: configuration file folder. such as your training parameters.
 - `models`: contain the basic backbone architectures and final models.
 - `losses`: losses which not contained in native PyTorch, such as yolov3_loss.
 - `utils`: other tools for data prepare and post processing, such as split large remote sensing image into your network desired size.
