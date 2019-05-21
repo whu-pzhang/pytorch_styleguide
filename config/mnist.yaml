@@ -11,10 +11,11 @@ train:
   pin_mem: True
   batch_size: 256
 
-  num_epochs: 50
-  resume: False
+  num_epochs: 4
+
+  resume: True
   checkpoint: "checkpoint"
-  backup_interval: 10
+  backup_interval: 1
 
   learning_rate: 1e-2
 
@@ -25,4 +26,4 @@ test:
   pin_mem: True
   batch_size: 512
 
-  test_interval: 2
+  test_interval: 10
