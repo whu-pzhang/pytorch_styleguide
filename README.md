@@ -48,7 +48,7 @@ The main routine, such as the train and test scripts should only import from the
 
 Follow the [Google Styleguide for Python](https://github.com/google/styleguide/blob/gh-pages/pyguide.md).
 
-Here is a summary of the most commonly used reules:
+Here is a summary of the most commonly used rules:
 
 | Type                | Convention         | Example                                                |
 | ------------------- | ------------------ | ------------------------------------------------------ |
