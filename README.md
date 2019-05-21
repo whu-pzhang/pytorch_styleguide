@@ -1,3 +1,10 @@
+<div align="center">
+📖 English
+&emsp;&emsp; | &emsp;&emsp;
+<a href="https://github.com/whu-pzhang/pytorch_styleguide/blob/master/README_CN.md">📖 中文</a>
+</div> 
+<br>
+
 # A PyTorch style-guide & best practices
 
 The offical [PyTorch Tutorials](https://pytorch.org/tutorials) is the best materials for beginers.
