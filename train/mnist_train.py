@@ -22,14 +22,6 @@ from utils import utils
 from models import SimpleConvNet
 
 
-# set flags
-np.random.seed(1)
-torch.manual_seed(1)
-if torch.cuda.is_available():
-    torch.cuda.manual_seed(1)
-    torch.backends.cudnn.benchmark = True
-
-
 if __name__ == "__main__":
 
     import argparse
@@ -41,6 +33,14 @@ if __name__ == "__main__":
     config = utils.parse_cfg(opt.cfg)
     #
     version = config["output_version"]
+    seed = config["seed"]
+    # set flags
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(seed)
+        torch.backends.cudnn.benchmark = True
+
     data_root = config["data_root_dir"]
     train_bs = config["train"]["batch_size"]
     test_bs = config["test"]["batch_size"]
