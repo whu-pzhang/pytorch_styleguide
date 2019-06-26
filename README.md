@@ -11,7 +11,7 @@ The offical [PyTorch Tutorials](https://pytorch.org/tutorials) is the best mater
 
 ## recommend using Python3.6
 
-From our experience, we recommend using Python 3.6 because of the compatibility and serval new features which
+From our experience, we recommend using Python 3.6 because of the compatibility and several new features which
 became very handy for clean and simple code.
 
 
