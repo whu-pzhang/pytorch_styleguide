@@ -3,7 +3,7 @@ Pillow==6.0.0
 prefetch-generator==1.0.1
 PyYAML==5.1
 tensorboardX==1.7
-tensorflow==1.13.1
+tensorflow==2.9.3
 torch==1.1.0
 torchvision==0.2.2.post3
 tqdm==4.32.1
